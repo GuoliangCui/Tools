@@ -1,0 +1,23 @@
+00:00:03|Info|Task.ExecuteWithThreadLocal => ExecutionContext.Run => RewardTask.JNGAReword|{"success":false,"msg":"今日已签过到，明天再来吧！","code":0}
+10:19:06|Info|AsyncTaskMethodBuilder`1.Start => <GetScheduler>d__69.MoveNext => StdSchedulerFactory.Initialize|Default Quartz.NET properties loaded from embedded resource file
+10:19:06|Info|AsyncTaskMethodBuilder`1.Start => <Instantiate>d__65.MoveNext => QuartzScheduler..ctor|Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+10:19:06|Info|QuartzScheduler..ctor => NLogLogger.Log => UpdateDelegates.UpdateAndExecuteVoid2|Quartz Scheduler v.3.0.7.0 created.
+10:19:06|Info|AsyncTaskMethodBuilder`1.Start => <Instantiate>d__65.MoveNext => RAMJobStore.Initialize|RAMJobStore initialized.
+10:19:06|Info|AsyncTaskMethodBuilder`1.Start => <Instantiate>d__65.MoveNext => QuartzScheduler.Initialize|Scheduler meta-data: Quartz Scheduler (v3.0.7.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:19:06|Info|AsyncTaskMethodBuilder`1.Start => <GetScheduler>d__69.MoveNext => StdSchedulerFactory.Instantiate|Quartz scheduler 'DefaultQuartzScheduler' initialized
+10:19:06|Info|AsyncTaskMethodBuilder`1.Start => <GetScheduler>d__69.MoveNext => StdSchedulerFactory.Instantiate|Quartz scheduler version: 3.0.7.0
+10:19:06|Info|<JobList>d__5.MoveNext => StdScheduler.Start => QuartzScheduler.Start|Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:19:14|Info|ObjectMethodExecutor.ExecuteAsync => <no type>.lambda_method => ValuesController.Get|cgl请求了
+10:19:14|Info|<Get>d__4.MoveNext => StdScheduler.Start => QuartzScheduler.Start|Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:19:15|Info|ObjectMethodExecutor.ExecuteAsync => <no type>.lambda_method => ValuesController.Get|半痴半傻签到任务启动:2019/10/17 10:19:15
+10:19:25|Info|ObjectMethodExecutor.ExecuteAsync => <no type>.lambda_method => ValuesController.Get|cgl1请求了
+10:19:25|Info|<Get>d__4.MoveNext => StdScheduler.Start => QuartzScheduler.Start|Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:19:25|Info|ObjectMethodExecutor.ExecuteAsync => <no type>.lambda_method => ValuesController.Get|崔国亮签到任务启动:2019/10/17 10:19:25
+10:19:35|Info|<JobList>d__5.MoveNext => StdScheduler.Start => QuartzScheduler.Start|Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.

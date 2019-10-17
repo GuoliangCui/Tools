@@ -1,0 +1,15 @@
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.WebAPI.deps.json
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.WebAPI.runtimeconfig.json
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.WebAPI.runtimeconfig.dev.json
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.WebAPI.dll
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.WebAPI.pdb
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.Common.dll
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\QianDao.Common.pdb
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.csproj.CoreCompileInputs.cache
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.AssemblyInfoInputs.cache
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.AssemblyInfo.cs
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.csproj.CopyComplete
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.dll
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.pdb
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\bin\Debug\netcoreapp2.0\Nlog.config
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.csprojResolveAssemblyReference.cache
