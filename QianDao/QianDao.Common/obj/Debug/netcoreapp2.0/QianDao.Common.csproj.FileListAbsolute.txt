@@ -1,9 +1,0 @@
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\bin\Debug\netcoreapp2.0\QianDao.Common.deps.json
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\bin\Debug\netcoreapp2.0\QianDao.Common.dll
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\obj\Debug\netcoreapp2.0\QianDao.Common.csproj.CoreCompileInputs.cache
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\obj\Debug\netcoreapp2.0\QianDao.Common.AssemblyInfoInputs.cache
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\obj\Debug\netcoreapp2.0\QianDao.Common.AssemblyInfo.cs
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\bin\Debug\netcoreapp2.0\QianDao.Common.pdb
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\obj\Debug\netcoreapp2.0\QianDao.Common.dll
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\obj\Debug\netcoreapp2.0\QianDao.Common.pdb
-E:\Yesway\Liang\Git\QianDao\QianDao.Common\obj\Debug\netcoreapp2.0\QianDao.Common.csprojResolveAssemblyReference.cache
