@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Common;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
@@ -37,24 +36,20 @@ namespace QianDao.WebAPI.Controllers
             var upwd = "cuiguoliang";
             //var uname = "崔国亮";
             //var upwd = "cuiguoliang";
-            if (name!="cgl")
-            {
-                uname = "崔国亮";
-                upwd = "cuiguoliang";
-            }
-            if (name != "cgl1")
-            {
-                uname = "半痴半傻";
-                upwd = "cuiguoliang";
-            }
+            //if (name=="cgl")
+            //{
+            //    uname = "崔国亮";
+            //    upwd = "cuiguoliang";
+            //}
            
             _scheduler = await _schedulerFactory.GetScheduler();
 
             await _scheduler.Start();
 
-            //var trigger = TriggerBuilder.Create().WithCronSchedule("40 10 10 * * ?").Build();
+           // var trigger = TriggerBuilder.Create().WithCronSchedule("30 21 9 * * ?").Build();
             //var trigger = TriggerBuilder.Create().WithCronSchedule("0/5 * * * * ?").Build();
-            var trigger = TriggerBuilder.Create().WithCronSchedule("0 0 0 * * ?").Build();
+
+            var trigger = TriggerBuilder.Create().WithCronSchedule("2 0 0 * * ?").Build();
 
             var jobName = Guid.NewGuid().ToString();
 

@@ -35,19 +35,29 @@ namespace QianDao.WebAPI.Job
                 cookie = cookieList[uname];
                 logger.Info("有cookie免登陆");
             }
-            
             if (loginState==100)
             {
                 var result = helper.Reward(cookie);
-
-                if (result != 100)
+                if (result==1001)
                 {
-                    logger.Info("签到失败尝试重试");
-                    throw new Exception("签到失败");
+                    logger.Info("cookie过期，重新登陆。");
+                    //重新登陆
+                    loginState = helper.Login(uname, pwd, ref cookie);
+                    cookieList.Remove(uname);
+                    cookieList.Add(uname, cookie);
+                    //记录日志
+                    logger.Info("重新登陆并设置cookie");
+                    result = helper.Reward(cookie);
+                }
+                
+                if(result==100)
+                {
+                    //记录日志
+                    logger.Info("签到成功！" + result);
                 }
                 else {
-                    //记录日志
-                    logger.Info("签到成功！"+result);
+                    logger.Info("签到失败尝试重试");
+                    throw new Exception("签到失败");
                 }
                
             }
