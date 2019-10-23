@@ -50,17 +50,17 @@ namespace QianDao.WebAPI.Util
 
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            if (string.IsNullOrEmpty(cookies["PHPSESSID"]))
-            {
-                var getCookies = cookieContainer.GetCookies(request.RequestUri);
-                Dictionary<string, string> dicCookies = new Dictionary<string, string>();
-                foreach (Cookie cookie in getCookies)
-                {
-                    dicCookies.Add(cookie.Name, cookie.Value);
-                }
 
-                cookies = new RequestCookieCollection(dicCookies);
+
+            var getCookies = cookieContainer.GetCookies(request.RequestUri);
+            Dictionary<string, string> dicCookies = new Dictionary<string, string>();
+            foreach (Cookie cookie in getCookies)
+            {
+                dicCookies.Add(cookie.Name, cookie.Value);
             }
+
+            cookies = new RequestCookieCollection(dicCookies);
+
 
             var resStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(resStream);

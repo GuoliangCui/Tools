@@ -46,10 +46,10 @@ namespace QianDao.WebAPI.Controllers
 
             await _scheduler.Start();
 
-           // var trigger = TriggerBuilder.Create().WithCronSchedule("30 21 9 * * ?").Build();
+           // var trigger = TriggerBuilder.Create().WithCronSchedule("10 21 9 * * ?").Build();
             //var trigger = TriggerBuilder.Create().WithCronSchedule("0/5 * * * * ?").Build();
 
-            var trigger = TriggerBuilder.Create().WithCronSchedule("2 0 0 * * ?").Build();
+            var trigger = TriggerBuilder.Create().WithCronSchedule("1 0 0 * * ?").Build();
 
             var jobName = Guid.NewGuid().ToString();
 
@@ -60,7 +60,7 @@ namespace QianDao.WebAPI.Controllers
 
             if (uJob == null)
             {
-                var jobDetail = JobBuilder.Create<MyJob>().UsingJobData("uname", uname).UsingJobData("upwd", upwd).UsingJobData("count",8).WithIdentity(name, "group0").Build();
+                var jobDetail = JobBuilder.Create<MyJob>().UsingJobData("uname", uname).UsingJobData("upwd", upwd).UsingJobData("count",10).WithIdentity(name, "group0").Build();
 
                 await _scheduler.ScheduleJob(jobDetail, trigger);
                 logger.Info(uname + "签到任务启动:" + DateTime.Now.ToString());
