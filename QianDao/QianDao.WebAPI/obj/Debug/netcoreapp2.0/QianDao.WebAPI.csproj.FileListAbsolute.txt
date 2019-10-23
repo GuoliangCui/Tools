@@ -9,3 +9,4 @@ E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAP
 E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.AssemblyInfo.cs
 E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.dll
 E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.pdb
+E:\Yesway\Liang\Git\QianDao\QianDao.WebAPI\obj\Debug\netcoreapp2.0\QianDao.WebAPI.csprojResolveAssemblyReference.cache
