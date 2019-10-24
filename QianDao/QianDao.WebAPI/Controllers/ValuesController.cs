@@ -49,7 +49,7 @@ namespace QianDao.WebAPI.Controllers
            // var trigger = TriggerBuilder.Create().WithCronSchedule("10 21 9 * * ?").Build();
             //var trigger = TriggerBuilder.Create().WithCronSchedule("0/5 * * * * ?").Build();
 
-            var trigger = TriggerBuilder.Create().WithCronSchedule("1 0 0 * * ?").Build();
+            var trigger = TriggerBuilder.Create().WithCronSchedule("2 0 0 * * ?").Build();
 
             var jobName = Guid.NewGuid().ToString();
 
