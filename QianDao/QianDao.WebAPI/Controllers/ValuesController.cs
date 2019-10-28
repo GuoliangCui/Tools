@@ -32,7 +32,7 @@ namespace QianDao.WebAPI.Controllers
         public async Task<string> Get(string name="cgl")
         {
             logger.Info(name + "请求了");
-            var uname = "崔国亮";
+            var uname = "今天最后签到";
             var upwd = "cuiguoliang";
             //var uname = "崔国亮";
             //var upwd = "cuiguoliang";
