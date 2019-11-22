@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using NLog.Web;
+using QianDao.WebAPI.Job;
 using QianDao.WebAPI.Util;
 using Quartz;
 using Quartz.Impl.Matchers;
@@ -26,10 +27,16 @@ namespace QianDao.WebAPI.Controllers
         {
             this._schedulerFactory = schedulerFactory;
         }
-        // GET api/values
-        [HttpGet("/add/task")]
+
         [HttpGet]
-        public async Task<string> Get(string name="cgl")
+        public ActionResult Get()
+        {
+            return View();
+        }
+
+        // GET api/values
+        [HttpGet("/addtask")]
+        public async Task<string> AddTask(string name = "cgl")
         {
             logger.Info(name + "请求了");
             var uname = "今天最后签到";
@@ -41,12 +48,12 @@ namespace QianDao.WebAPI.Controllers
             //    uname = "崔国亮";
             //    upwd = "cuiguoliang";
             //}
-           
+
             _scheduler = await _schedulerFactory.GetScheduler();
 
             await _scheduler.Start();
 
-           // var trigger = TriggerBuilder.Create().WithCronSchedule("10 21 9 * * ?").Build();
+            // var trigger = TriggerBuilder.Create().WithCronSchedule("10 21 9 * * ?").Build();
             //var trigger = TriggerBuilder.Create().WithCronSchedule("0/5 * * * * ?").Build();
 
             var trigger = TriggerBuilder.Create().WithCronSchedule("2 0 0 * * ?").Build();
@@ -60,18 +67,19 @@ namespace QianDao.WebAPI.Controllers
 
             if (uJob == null)
             {
-                var jobDetail = JobBuilder.Create<MyJob>().UsingJobData("uname", uname).UsingJobData("upwd", upwd).UsingJobData("count",10).WithIdentity(name, "group0").Build();
+                var jobDetail = JobBuilder.Create<MyJob>().UsingJobData("uname", uname).UsingJobData("upwd", upwd).UsingJobData("count", 10).WithIdentity(name, "group0").Build();
 
                 await _scheduler.ScheduleJob(jobDetail, trigger);
                 logger.Info(uname + "签到任务启动:" + DateTime.Now.ToString());
                 return await Task.FromResult<string>("任务已启动");
             }
-            else {
+            else
+            {
                 return await Task.FromResult<string>("任务已存在");
             }
         }
 
-        [HttpGet("/get/list")]
+        [HttpGet("/getlist")]
         public async Task<string> JobList()
         {
             _scheduler = await _schedulerFactory.GetScheduler();
@@ -87,6 +95,18 @@ namespace QianDao.WebAPI.Controllers
                 names += item.Name + ",";
             }
             return await Task.FromResult<string>(names);
+        }
+
+        [HttpGet("/dailytask")]
+        public async Task<string> DoDailyTask()
+        {
+            DailyTask dt = new DailyTask("今天最后签到", "cuiguoliang");
+            //DailyTask dt = new DailyTask("半痴半傻", "cuiguoliang");
+            dt.DianZan();
+            dt.HuiTie();
+            dt.FenXiang();
+           // dt.GuanZhu();
+            return await Task.FromResult<string>("每日任务完毕");
         }
     }
 }
